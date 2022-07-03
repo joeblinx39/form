@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Zuri Training | Intro component with sign up form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>
+          Learn to code by
+          <br />
+          watching others
+        </h1>
+        <button type="submit" class="box-blue" onclick="openForm()">
+          Open Form
+        </button>
+        <br /><br />
+        <button type="submit" class="box-blue" onclick="displayDetails()">
+          Show User Details
+        </button>
+      </div>
+      
+      <div>
+        <form class="box" id="form">
+          <div class="form-control">
+            <input type="text" id="username" placeholder="User Name" autocapitalize="on" autocomplete="off"/>
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="tel" id="telephone" placeholder="Phone Number" autocapitalize="on" autocomplete="off"/>
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="email" id="email" placeholder="Email Address" autocapitalize="on" autocomplete="off"/>
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="password" id="password" placeholder="Password" autocomplete="off"/>
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small></small>
+          </div>
+          <div class="form-control">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" autocomplete="off"/>
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small></small>
+          </div>
+
+          <button>Submit Details</button><br />
+          <button onclick="closeForm()" class="cancel">Close Form</button>
+
+          <small>
+            By clicking the button, you are agreeing to our
+            <a href="#">Terms and Services</a>
+          </small>
+        </form>
+      </div>
+      <div class="box" id="details">
+        <h1>User Details</h1>
+        <h3 id="user"></h3>
+        <h3 id="tel"></h3>
+        <h3 id="emailadd"></h3>
+        <br>
+        <button type="submit" class="cancel" onclick="hide()">
+            Hide User Details
+          </button>
+          <br>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
