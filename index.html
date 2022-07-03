@@ -27,10 +27,6 @@
         <button type="submit" class="box-blue" onclick="openForm()">
           Open Form
         </button>
-        <br /><br />
-        <button type="submit" class="box-blue" onclick="displayDetails()">
-          Show User Details
-        </button>
       </div>
       <br>
       <div>
@@ -61,8 +57,7 @@
             <small></small>
           </div>
 
-          <button>Submit Details</button><br />
-          <button onclick="closeForm()" class="cancel">Close Form</button>
+          <button onclick="displayDetails(); closeForm();" >Submit Details</button><br />
 
           <small>
             By clicking the button, you are agreeing to our
